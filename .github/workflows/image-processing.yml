@@ -1,0 +1,30 @@
+name: Image Quality Reduction
+
+on:
+  push:
+    branches:
+      - main  # Trigger this action on pushes to the main branch
+    paths:
+      - "images/fulls/**/*.jpg"  # Only when JPG images are changed in 'images/fulls/'
+
+jobs:
+  reduce-image-quality:
+    runs-on: ubuntu-latest  # Using Ubuntu runner
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'  # You can specify a different Python version if needed
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install Pillow
+
+    - name: Run Image Quality Reduction Script
+      run: |
+        python reduce_image_quality.py  # Run your Python script
