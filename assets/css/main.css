@@ -825,13 +825,3 @@ input, select, textarea {
 				}
 
 		}
-
-		.lazyload {
-			filter: blur(5px);
-			transition: filter 0.5s ease-in-out;
-		}
-		
-		/* Remove blur once the high-quality image loads */
-		.lazyload.loaded {
-			filter: blur(0);
-		}
