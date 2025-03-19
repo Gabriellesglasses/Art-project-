@@ -28,3 +28,10 @@ jobs:
     - name: Run Image Quality Reduction Script
       run: |
         python reduce_image_quality.py  # Run your Python script
+
+    - name: Commit and Push Changes
+      uses: EndBug/add-and-commit@v7  # This is a GitHub Action to commit and push files
+      with:
+        author_name: 'github-actions[bot]'
+        author_email: 'github-actions[bot]@users.noreply.github.com'
+        message: 'Added low-quality images to thumbs folder'
