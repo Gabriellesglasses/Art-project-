@@ -29,9 +29,10 @@ jobs:
       run: |
         python reduce_image_quality.py  # Run your Python script
 
-    - name: Commit and Push Changes
+    - name: Commit and Push Changes to "thumbs-images" branch
       uses: EndBug/add-and-commit@v7  # This is a GitHub Action to commit and push files
       with:
         author_name: 'github-actions[bot]'
         author_email: 'github-actions[bot]@users.noreply.github.com'
         message: 'Added low-quality images to thumbs folder'
+        branch: 'thumbs-images'  # Specify the target branch to push to
