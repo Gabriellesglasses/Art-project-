@@ -13,14 +13,15 @@ if not os.path.exists(thumb_dir):
 for filename in os.listdir(full_dir):
     if filename.endswith(".jpg"):
         full_image_path = os.path.join(full_dir, filename)
-        thumb_image_path = os.path.join(thumb_dir, filename)
+        
+        # Create the new filename with "downscaled_" prefix
+        new_filename = f"downscaled_{filename}"
+        thumb_image_path = os.path.join(thumb_dir, new_filename)
 
         # Open the image
         img = Image.open(full_image_path)
 
-        # Reduce quality and save to thumbs directory
+        # Reduce quality and save to thumbs directory with new name
         img.save(thumb_image_path, "JPEG", quality=10)  # Set quality as needed
 
-        print(f"Processed {filename}")
-
-
+        print(f"Processed {filename} -> {new_filename}")
