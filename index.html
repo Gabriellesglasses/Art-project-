@@ -143,45 +143,40 @@
 								<p style="color: rgb(88, 131, 179);" class="customFont">Videos & <br> Movie Design Works</p>
 							</div>
 
-							<iframe width="315" height="560" class="item thumb span-2"
-									src="https://www.youtube.com/embed/e4DmYz-ULxI"
-									title="YouTube video player"
-									frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							<iframe id="i1" width="315" height="560" class="item thumb span-2"
+							src="videoError.html"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 									allowfullscreen></iframe>
 
 								
-								
-								<iframe width="315" height="560" class="item thumb span-3"
-									src="https://www.youtube.com/embed/427LC-dVtlk"
-									title="浪漫废料"
-									frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-									allowfullscreen>
-									<img id="random" src="./images/video_thumbs/浪漫废料cover.JPG" alt=""/>
-								</iframe>
-									
-								<iframe width="315" height="560" class="item thumb span-3"
-									src="https://www.youtube.com/embed/6t6Uc8cQYUY"
+							<iframe id="i2" width="315" height="560" class="item thumb span-3"
+								title="浪漫废料"
+								src="videoError.html"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+								<img id="random" src="./images/video_thumbs/浪漫废料cover.JPG" alt=""/>
+							</iframe>
+	
+								<iframe id="i3" width="315" height="560" class="item thumb span-3"
 									title="YouTube video player"
-									frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-									allowfullscreen></iframe>
-
-
-								<iframe width="315" height="560" class="item thumb span-2"
-									src="https://www.youtube.com/embed/370vk7dceu0"
-									title="YouTube video player"
+									src="videoError.html"
 									frameborder="0"
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 									allowfullscreen></iframe>
 
-									
-
-
-								<iframe width="315" height="560" class="item thumb span-1"
-									src="https://www.youtube.com/embed/yIGnCeI7gzk"
+								<iframe id="i4" width="315" height="560" class="item thumb span-2"
 									title="YouTube video player"
+									src="videoError.html"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									allowfullscreen></iframe>
+
+								<iframe id="i5" width="315" height="560" class="item thumb span-1"
+									title="YouTube video player"
+									src="videoError.html"
 									frameborder="0"
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 									allowfullscreen></iframe>
@@ -228,5 +223,17 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script>
+
+				function greeting() {
+					document.getElementById("i1").src = "https://www.youtube.com/embed/e4DmYz-ULxI";
+					document.getElementById("i2").src = "https://www.youtube.com/embed/427LC-dVtlk";
+					document.getElementById("i3").src = "https://www.youtube.com/embed/6t6Uc8cQYUY";
+					document.getElementById("i4").src = "https://www.youtube.com/embed/370vk7dceu0";
+					document.getElementById("i5").src = "https://www.youtube.com/embed/yIGnCeI7gzk";
+				}
+
+				setTimeout(greeting, 1);
+			</script>
 	</body>
 </html>

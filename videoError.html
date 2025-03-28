@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox</title>
+	<style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+            background-color: rgb(45, 44, 44);
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		}
+
+		.box {
+			padding: 8px 35px;
+			font-size: 11px;
+			color: whitesmoke;
+		}
+
+        @font-face {
+			font-family: typewriter;
+			src: url(./assets/webfonts/rusty_typewriter.otf);
+		  }
+		
+		.customFont{
+			font-family: typewriter;
+		}
+        a{
+            color: rgb(88, 131, 179);
+        }
+
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="box">
+			<h1 class="customFont">This Video is not available in your region :(</h1>
+            <p class="customFont">Please click <a href="https://space.bilibili.com/91787917">here</a> for all the videos</p>
+		</div>
+	</div>
+
+</body>
+
+</html>
