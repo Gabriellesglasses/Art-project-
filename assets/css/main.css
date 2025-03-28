@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
 @import url("fontawesome-all.min.css");
 
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -123,7 +124,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		font-family: 'Source Sans Pro';
+		font-family: 'WenyueType GutiFangsong';
 		font-weight: 400;
 		padding: 0;
 		font-size: 13pt;
@@ -155,8 +156,8 @@ input, select, textarea {
 		}
 
 	a {
-		color: #fff;
-		color: rgba(255, 255, 255, 0.85);
+		color: #F9F6EE;
+		color: #F9F6EE;
 		text-decoration: none;
 		-moz-transition: color 0.25s ease-in-out;
 		-webkit-transition: color 0.25s ease-in-out;
@@ -170,13 +171,13 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
-		color: #fff;
+		color: #F9F6EE;
 		letter-spacing: -0.05em;
 	}
 
 	strong, b {
-		color: #fff;
-		color: rgba(255, 255, 255, 0.85);
+		color: #F9F6EE;
+		color: #F9F6EE;
 		font-weight: 600;
 	}
 
@@ -199,7 +200,7 @@ input, select, textarea {
 
 			ul.icons li a {
 				opacity: 0.35;
-				color: #fff;
+				color: #F9F6EE;
 				-moz-transition: opacity 0.25s ease-in-out;
 				-webkit-transition: opacity 0.25s ease-in-out;
 				-ms-transition: opacity 0.25s ease-in-out;
@@ -355,6 +356,7 @@ input, select, textarea {
 		overflow-x: hidden;
 		-webkit-overflow-scrolling: touch;
 		padding: 5px;
+		background-color:#F9F6EE;
 	}
 
 		#main .items {
@@ -365,7 +367,7 @@ input, select, textarea {
 		}
 
 			#main .items > :last-child {
-				border-right: solid 10px #ffffff;
+				border-right: solid 10px #F9F6EE;
 			}
 
 		#main .item {
@@ -379,7 +381,7 @@ input, select, textarea {
 			flex-shrink: 0;
 			margin: 2px;
 			height: 16em;
-			box-shadow: 0 0 0 10px #ffffff;
+			box-shadow: 0 0 0 10px #F9F6EE;
 		}
 
 			#main .item.span-1 {
@@ -395,8 +397,8 @@ input, select, textarea {
 			}
 
 			#main .item.intro {
-				background-color: #ffffff;
-				background-image: url("images/overlay.png");
+				background-color: #F9F6EE;
+				/* background-image: url("images/overlay.png"); */
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
@@ -574,7 +576,7 @@ input, select, textarea {
 					flex-shrink: 1;
 					width: calc(50vw - 15px) !important;
 					margin: 2.5px;
-					box-shadow: 0 0 0 5px #ffffff;
+					box-shadow: 0 0 0 5px #F9F6EE;
 				}
 
 					#main .item.intro {
@@ -710,7 +712,7 @@ input, select, textarea {
 	.poptrox-popup {
 		background: #1a1f2c;
 		background: rgba(18, 21, 29, 0.9);
-		box-shadow: 0px 0px 0px 10px #fff, 0px 10px 60px 10px rgba(8, 11, 19, 0.55);
+		box-shadow: 0px 0px 0px 10px #F9F6EE, 0px 10px 60px 10px rgba(8, 11, 19, 0.55);
 		cursor: default;
 	}
 
@@ -737,7 +739,7 @@ input, select, textarea {
 			line-height: 75px;
 			text-align: center;
 			font-size: 1.25em;
-			color: #fff;
+			color: #F9F6EE;
 		}
 
 		.poptrox-popup .nav-next, .poptrox-popup .nav-previous {
@@ -805,7 +807,7 @@ input, select, textarea {
 			.poptrox-popup {
 				background: #0a0f1c;
 				box-shadow: 0px 0px 30px 10px rgba(8, 11, 19, 0.85);
-				border: solid 2.5px #fff;
+				border: solid 2.5px #F9F6EE;
 				-moz-box-sizing: content-box;
 				-webkit-box-sizing: content-box;
 				-ms-box-sizing: content-box;
@@ -824,4 +826,21 @@ input, select, textarea {
 					display: none !important;
 				}
 
+		}
+
+		@font-face {
+			font-family: typewriter;
+			src: url(../webfonts/rusty_typewriter.otf);
+		  }
+		  @font-face {
+			font-family: guyaFont;
+			src: url(../webfonts/WenYue_XHGuYaSong_JRFC.otf);
+		  }
+		
+		.customFont{
+			font-family: typewriter;
+		}
+
+		.guyaFont{
+			font-family: guyaFont;
 		}
